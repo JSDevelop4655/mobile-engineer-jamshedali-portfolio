@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090b10">
+<meta name="description" content="Jamshed Ali — Senior Mobile Engineer specializing in React Native, native iOS and Android, mobile architecture, CI/CD, release automation and AI-assisted engineering.">
+<title>Jamshed Ali | Senior Mobile Engineer</title>
+<style>
+:root {
+  --bg:#090b10;
+  --panel:#111620;
+  --text:#f2f4fa;
+  --muted:#a0a9bb;
+  --line:#252c3a;
+  --accent:#a394ff;
+  --cyan:#72e6d5;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; scroll-padding-top:85px; }
+body {
+  margin:0; background:var(--bg); color:var(--text);
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  line-height:1.7;
+}
+a { color:inherit; text-decoration:none; }
+a:hover { color:var(--cyan); }
+.wrap { width:min(1050px,90%); margin:auto; }
+header {
+  position:sticky; top:0; z-index:10;
+  background:rgba(9,11,16,.92); backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+}
+nav { display:flex; justify-content:space-between; align-items:center; min-height:68px; gap:18px; }
+.logo { font-size:21px; font-weight:850; letter-spacing:-1px; }
+.logo span { color:var(--accent); }
+.navlinks { display:flex; gap:20px; color:var(--muted); font-size:13px; }
+.hero { padding:100px 0 85px; }
+.eyebrow { color:var(--cyan); font-size:11px; font-weight:800; letter-spacing:2px; text-transform:uppercase; }
+h1 { font-size:clamp(43px,7.5vw,78px); line-height:1.08; letter-spacing:-3px; margin:20px 0; }
+.gradient { background:linear-gradient(100deg,var(--accent),var(--cyan)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.intro { max-width:720px; color:var(--muted); font-size:17px; }
+.actions { display:flex; flex-wrap:wrap; gap:11px; margin-top:27px; }
+.btn { display:inline-block; padding:10px 16px; border:1px solid var(--line); border-radius:8px; font-size:13px; font-weight:700; }
+.btn.primary { background:var(--cyan); color:#07110f; border-color:var(--cyan); }
+.section { padding:62px 0; border-top:1px solid var(--line); }
+.section-head { margin-bottom:26px; }
+h2 { font-size:28px; letter-spacing:-.8px; margin:0 0 5px; }
+.sub { color:var(--muted); font-size:13px; margin:0; }
+.grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
+.card { padding:21px; border:1px solid var(--line); border-radius:12px; background:var(--panel); transition:transform .2s,border-color .2s; }
+.card:hover { transform:translateY(-3px); border-color:#6559a0; }
+.card h3 { margin:0 0 8px; font-size:16px; }
+.card p { margin:0; color:var(--muted); font-size:13px; }
+.tags { display:flex; flex-wrap:wrap; gap:6px; margin-top:14px; }
+.tag { color:#d0caff; background:#1c2030; border:1px solid #302d48; padding:3px 8px; border-radius:5px; font-size:10px; }
+.timeline { display:grid; gap:20px; }
+.job { border-left:2px solid #6657a9; padding-left:21px; }
+.job h3 { margin:0; font-size:17px; }
+.meta { color:var(--cyan); font-size:12px; margin:3px 0 8px; }
+ul { padding-left:19px; color:var(--muted); font-size:13px; }
+li { margin-bottom:5px; }
+.skills { display:flex; flex-wrap:wrap; gap:8px; }
+.skill { border:1px solid var(--line); background:var(--panel); border-radius:6px; padding:7px 10px; font-size:12px; color:#dce1ef; }
+.contact { padding:30px; border:1px solid var(--line); border-radius:14px; background:linear-gradient(135deg,#17172b,#101920); }
+footer { border-top:1px solid var(--line); padding:22px 0; color:var(--muted); font-size:12px; }
+.footer-row { display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; }
+@media(max-width:760px) {
+  .grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .hero { padding:70px 0; }
+  .navlinks { gap:12px; font-size:11px; }
+  h1 { letter-spacing:-2px; }
+}
+@media(max-width:500px) {
+  .grid { grid-template-columns:1fr; }
+  .navlinks { gap:10px; }
+  .navlinks a:nth-child(2) { display:none; }
+  .section { padding:45px 0; }
+  .intro { font-size:15px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  html { scroll-behavior:auto; }
+  *,*:before,*:after { transition:none!important; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a class="logo" href="#home">JA<span>.</span></a>
+    <div class="navlinks">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section class="hero wrap" id="home">
+  <div class="eyebrow">Senior Mobile Engineer · Karachi, Pakistan</div>
+  <h1>Building mobile<br>products that <span class="gradient">scale.</span></h1>
+  <p class="intro">
+    I'm Jamshed Ali, a Senior Mobile Engineer specializing in React Native,
+    native iOS and Android, mobile architecture, release automation, and
+    production reliability. I build mobile applications and the engineering
+    systems that help teams deliver them confidently.
+  </p>
+  <div class="actions">
+    <a class="btn primary" href="#projects">Explore my work ↓</a>
+    <a class="btn" href="mailto:jamshedalidev@gmail.com">Email me ↗</a>
+    <a class="btn" href="https://www.linkedin.com/in/jamshed-ali-36b894259/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+    <a class="btn" href="https://github.com/JSDevelop4655" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Engineering beyond features.</h2>
+      <p class="sub">Mobile development, reliable platforms, and developer productivity.</p>
+    </div>
+    <p class="intro">
+      My experience spans the mobile engineering lifecycle—from architecture
+      and implementation to automated testing, app-store delivery, and
+      production support. At Flipdish, I work on white-label mobile
+      applications, release tooling, deployment automation, and platform
+      reliability. I also enjoy mentoring engineers, collaborating across
+      frontend and backend teams, and using AI coding assistants effectively
+      to solve complex problems while maintaining code quality.
+    </p>
+  </div>
+</section>
+
+<section class="section" id="experience">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Experience</h2>
+      <p class="sub">Mobile engineering, technical ownership, and consulting.</p>
+    </div>
+    <div class="timeline">
+      <article class="job">
+        <h3>Software Engineer III · Flipdish</h3>
+        <div class="meta">November 2025 – Present · Dublin, Ireland</div>
+        <ul>
+          <li>Develop and maintain React Native apps across iOS and Android, including ordering, checkout, delivery, notifications, and account flows.</li>
+          <li>Own mobile release workflows involving GitHub Actions, Fastlane, CodePush, App Store Connect, and Google Play Console.</li>
+          <li>Build release automation, self-service CodePush rollback tools, and mobile build-failure tooling.</li>
+          <li>Designed a brand-assets platform using React, BFF, AWS Lambda, S3, Sharp, and Fastlane for scalable white-label deployments.</li>
+          <li>Automate app-store workflows and troubleshoot issues across TypeScript, Kotlin/Android, APIs, CI/CD, and cloud infrastructure.</li>
+          <li>Write unit tests and use Maestro for end-to-end testing and regression prevention.</li>
+          <li>Support SUNMI kiosk and terminal application releases, updates, and device distribution.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Senior Mobile App Engineer & Application Consultant · Deans Group</h3>
+        <div class="meta">August 2025 – December 2025 · UK · Remote</div>
+        <ul>
+          <li>Planned the digitization of manual security assessment workflows through mobile applications and supporting backend services.</li>
+          <li>Guided mobile and backend engineers and collaborated with UI/UX designers on technical direction and application design.</li>
+          <li>Worked with management to explain technical decisions, align development priorities, and translate business requirements into technical plans.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Software Engineer · Koderlabs</h3>
+        <div class="meta">January 2024 – November 2025 · Karachi, Pakistan</div>
+        <ul>
+          <li>Managed mobile application development from requirements and technical planning through implementation, testing, and deployment.</li>
+          <li>Collaborated with product, design, frontend, and backend teams to deliver maintainable solutions.</li>
+          <li>Mentored junior developers, conducted code reviews, and improved development workflows through automation and process optimization.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Senior Software Engineer · Outsource In Pakistan</h3>
+        <div class="meta">February 2022 – January 2024</div>
+        <ul>
+          <li>Led developers in designing and implementing mobile solutions, supporting architecture decisions, code quality, and project delivery.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Associate Software Engineer · Zeedev</h3>
+        <div class="meta">June 2020 – January 2022</div>
+        <ul>
+          <li>Developed and maintained cross-platform Android and iOS applications, improving functionality, reliability, and maintainability.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Junior Developer · Eastern Corporation & Minibig Solution</h3>
+        <div class="meta">August 2018 – May 2020 · Remote</div>
+        <ul>
+          <li>Built cross-platform mobile applications, gathered client requirements, and collaborated with teams to deliver features across different domains.</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="projects">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Selected projects</h2>
+      <p class="sub">Mobile products and engineering systems I've contributed to.</p>
+    </div>
+    <div class="grid">
+      <article class="card">
+        <h3>White-Label Food Ordering</h3>
+        <p>Contributed to deployment and release operations for a white-label food ordering platform supporting 5,000+ app deployments.</p>
+        <div class="tags"><span class="tag">React Native</span><span class="tag">Fastlane</span><span class="tag">CI/CD</span></div>
+      </article>
+      <article class="card">
+        <h3>Brand Assets Platform</h3>
+        <p>Platform for brand asset processing and scalable white-label mobile deployments.</p>
+        <div class="tags"><span class="tag">React</span><span class="tag">AWS</span><span class="tag">BFF</span></div>
+      </article>
+      <article class="card">
+        <h3>Security Assessment Platform</h3>
+        <p>Technical planning to digitize manual security assessments through mobile apps and backend services.</p>
+        <div class="tags"><span class="tag">Mobile</span><span class="tag">Backend</span><span class="tag">Consulting</span></div>
+      </article>
+      <article class="card">
+        <h3>SUNMI Kiosk & Terminal Apps</h3>
+        <p>Application deployments, updates, and device distribution for kiosk and terminal environments.</p>
+        <div class="tags"><span class="tag">Android</span><span class="tag">SUNMI</span></div>
+      </article>
+      <article class="card">
+        <h3>Parent Pass</h3>
+        <p>Parenting platform for discovering childcare, local resources, activities, and family connections.</p>
+        <div class="tags"><span class="tag">Mobile</span><span class="tag">Community</span></div>
+      </article>
+      <article class="card">
+        <h3>Stance & Motion</h3>
+        <p>Wrestling coaching and timer application designed to help athletes improve their skills.</p>
+        <div class="tags"><span class="tag">Mobile</span><span class="tag">Fitness</span></div>
+      </article>
+      <article class="card">
+        <h3>Askip</h3>
+        <p>Event registration app for online and in-person sports, gaming, art, and creator events.</p>
+        <div class="tags"><span class="tag">Mobile</span><span class="tag">Events</span></div>
+      </article>
+      <article class="card">
+        <h3>CoreEx</h3>
+        <p>Fitness consulting app offering personalized training plans, progress tracking, and expert guidance.</p>
+        <div class="tags"><span class="tag">Mobile</span><span class="tag">Fitness</span></div>
+      </article>
+      <article class="card">
+        <h3>Look Who's Outdoors</h3>
+        <p>Outdoor activity and community app for discovering adventures and connecting with others.</p>
+        <div class="tags"><span class="tag">Mobile</span><span class="tag">Community</span></div>
+      </article>
+    </div>
+    <p class="sub" style="margin-top:16px">
+      Public app links and screenshots can be added when available and authorized.
+    </p>
+  </div>
+</section>
+
+<section class="section" id="skills">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Technical toolkit</h2>
+      <p class="sub">Technologies used across mobile engineering and delivery.</p>
+    </div>
+    <div class="skills">
+      <span class="skill">React Native</span>
+      <span class="skill">TypeScript</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">Kotlin</span>
+      <span class="skill">iOS</span>
+      <span class="skill">Android</span>
+      <span class="skill">Native Modules</span>
+      <span class="skill">Redux</span>
+      <span class="skill">Expo</span>
+      <span class="skill">Jest</span>
+      <span class="skill">Maestro</span>
+      <span class="skill">Detox</span>
+      <span class="skill">Playwright</span>
+      <span class="skill">GitHub Actions</span>
+      <span class="skill">Fastlane</span>
+      <span class="skill">CodePush</span>
+      <span class="skill">App Store Connect</span>
+      <span class="skill">Google Play Console</span>
+      <span class="skill">AWS Lambda</span>
+      <span class="skill">Amazon S3</span>
+      <span class="skill">AWS Fargate</span>
+      <span class="skill">Firebase</span>
+      <span class="skill">Datadog</span>
+      <span class="skill">Python</span>
+      <span class="skill">Ruby</span>
+      <span class="skill">REST APIs</span>
+      <span class="skill">GraphQL</span>
+      <span class="skill">CI/CD</span>
+      <span class="skill">Cursor</span>
+      <span class="skill">Claude Code</span>
+      <span class="skill">GitHub Copilot</span>
+      <span class="skill">Gemini</span>
+      <span class="skill">Prompt Engineering</span>
+      <span class="skill">Context Engineering</span>
+      <span class="skill">Release Automation</span>
+      <span class="skill">System Design</span>
+      <span class="skill">Technical Leadership</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="contact">
+      <div class="eyebrow">Let's connect</div>
+      <h2 style="margin-top:12px">Have a mobile product to build?</h2>
+      <p class="sub">Interested in opportunities involving mobile engineering, scalable architecture, automation, and technical problem-solving.</p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:jamshedalidev@gmail.com">Email me ↗</a>
+        <a class="btn" href="https://www.linkedin.com/in/jamshed-ali-36b894259/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        <a class="btn" href="https://github.com/JSDevelop4655" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap footer-row">
+    <span>© <span id="year"></span> Jamshed Ali</span>
+    <span>Mobile engineering · Reliable systems · Continuous improvement</span>
+  </div>
+</footer>
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
